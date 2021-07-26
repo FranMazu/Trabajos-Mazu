@@ -8,8 +8,6 @@ app.get("/home",(req,res)=>{
     res.sendFile(path.join(__dirname, "/views/home.html"))
 });
 
-app.listen(process.env.PORT || 3050,() => console.log("El hamster corre a 3000"));
-
 app.get("/logIn",(req,res) => {
     res.sendFile(path.join(__dirname, "/views/logIn.html"))
 });
@@ -17,5 +15,7 @@ app.get("/logIn",(req,res) => {
 app.get("/register",(req,res) => {
     res.sendFile(path.join(__dirname, "/views/register.html"))
 })
+
+app.listen(process.env.PORT || 3050,() => console.log("El hamster corre a 3050"));
 
 app.use(express.static("public"));
