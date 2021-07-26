@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+/* header*/
+
+.header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+.logo {
+    width: 150px;
+}
+.copy-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+.barraBusqueda{
+    width: 150px;
+    text-align: center;
+    border: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}       
+.hamburger-button {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.Lista-Header {
+    display: none;
+}
+
+
+.Lista-Header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Lista-Header a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+}
+
+/*Formulario*/
+.create-form {
+    padding: 20px 15px;;
+}
+.control-formulario {
+margin-bottom: 15px;
+}
+
+.control-formulario label {
+    font-style: italic; 
+    margin-bottom: 5px;
+    display: block;
+}
+.control {
+    width: 100%;
+    padding: 5px;
+}
+.buttom-form {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/*Body*/
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+/*Main*/
+
+.sectionProductos {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.articulos {
+    margin: 20px;
+    position: relative;
+    transition: box-shadow .5ms;
+}
+.articulos:hover{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+.productosEnLaSeccion{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagenProducto {
+    width: 50%;
+    margin: 8px;
+}
+.imagenContenedor {
+    text-align: center;
+}
+.subcajaArticulos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    margin: 0 auto;
+}
+.subcajaArticulos i {
+    display: block;
+    font-size: 29px;
+    padding: 5px;
+    width: 50px;
+    height: 45px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 150px;
+    top: -1px;
+    align-items: center;
+    color: green;
+}
+
+.icon{
+    transition: transform 1s;
+}
+
+.icon:hover{
+    transform: rotate(-90deg);
+}
+
+#icon{
+    text-align: right;
+}
+
+.iconos {
+    color: blue;
+    font-size: 30px;
+}
+.titulares {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: chartreuse;
+}
+
+.descripciones{
+    visibility: hidden;
+}
+
+.cuerpoTexto {
+    font-size: 16px;
+    text-align: center;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+
+
+
+/*Log in */
+
+
+.Formulario input{
+    margin: 10px;
+    padding: 15px;
+    width: 800px;
+    border: hidden;
+}
+
+.Formulario{
+    text-align: center;
+    padding: 20px;
+}
+
+.Boton-enviar{
+    width: 700px;
+    background-color: rgba(0, 0, 255, 0.616);
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+}
+
+/*Register*/
+
+.main-register{
+    text-align: center;
+    padding: 30px 0 ;
+}
+
+.main-register input{
+    margin: 10px;
+    padding: 15px;
+
+}
+
+
+
+/*MediasQ*/
+
+
+@media (min-width: 768px) {
+    .main-header-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 360px;
+        text-align: right;
+    }
+    .hamburger-button {
+        display: none;
+    }
+    .Lista-Header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .Lista-Header ul {
+        display: flex;
+    }
+    .Lista-Header li {
+        margin: 0 5px;
+    }
+
+/*articulos*/
+
+    .descripciones{
+        visibility: visible;
+        font-size: 20px;
+    }
+
+    .descuentos{
+        font-size: 20px;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 400px;
+    }
+    .main-header-top, .Lista-Header{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .main-header-top {
+        align-items: center;
+    }
+    .Lista-Header {
+        margin-top: 30px;
+    }
+    .copy-header {
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400px;
+        margin: 0;
+    }
+    .Lista-Header li {
+        margin: 0 10px;
+    }
+    .Lista-Header a {
+        font-size: 19px;
+    }
+    .product-flex {
+        flex-wrap: nowrap;
+    }
+    
+    .titulares{
+        text-align: center;
+        font-size: 30px;
+    }
+}
